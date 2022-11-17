@@ -1,1 +1,2 @@
-shopping-property=Shopping Profile Dev
+shopping:
+  property: Shopping Profile Dev
