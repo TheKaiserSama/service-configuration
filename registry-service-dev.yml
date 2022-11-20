@@ -1,4 +1,10 @@
+registry:
+  property: Registry Profile Dev
+
+#Application Configuration
 server:
+  error:
+    include-message: always
   port: 8761
 
 eureka:
