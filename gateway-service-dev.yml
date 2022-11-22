@@ -1,7 +1,6 @@
 customer:
   property: Gateway Profile Dev
 
-#Application Configuration
 server:
   error:
     include-message: always

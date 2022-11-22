@@ -1,15 +1,11 @@
 product:
   property: Product Profile Dev Updated
 
-#Application Configuration
 server:
   error:
     include-message: always
   port: 8091
 
-# To See H2 Console in Browser:
-# http://localhost:8091/h2-console
-# Enabling H2 Console
 spring:
   h2:
     console:
@@ -18,18 +14,12 @@ spring:
       settings.trace: false
       settings.web-allow-others: false
 
-  # ===============================
-  # DB
-  # ===============================
   datasource:
     url: jdbc:h2:mem:productDB;MODE=MYSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;DATABASE_TO_LOWER=TRUE
     username: sa
     password:
     driverClassName: org.h2.Driver
 
-  # ===============================
-  # JPA / HIBERNATE
-  # ===============================
   jpa:
     show-sql: true
     hibernate:
@@ -49,6 +39,3 @@ spring:
 eureka:
   instance:
     instance-id: ${spring.application.name}:${random.uuid}
-#logging:
-#  pattern:
-#    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
