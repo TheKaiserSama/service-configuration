@@ -16,8 +16,8 @@ spring:
 
   datasource:
     url: jdbc:h2:mem:productDB;MODE=MYSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;DATABASE_TO_LOWER=TRUE
-    #username: sa
-    #password:
+    username: sa
+    password:
     driverClassName: org.h2.Driver
 
   jpa:
